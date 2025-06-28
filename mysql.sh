@@ -2,6 +2,8 @@
 
 source ./common.sh 
 
+CHECK_USER
+
 echo "please enter the db passwd"
 read db_password
 echo $db_password
