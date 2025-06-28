@@ -11,7 +11,7 @@ echo $db_password
 dnf install mysql-server -y &>>$LOG_FILE
 #VALIDATION_FUNCTION $? "installing mysql-server"
 
-systemctl enable mywewesqld &>>$LOG_FILE
+systemctl enable mysqld &>>$LOG_FILE
 #VALIDATION_FUNCTION $? "enabling mysqld"
 
 systemctl start mysqld &>>$LOG_FILE
