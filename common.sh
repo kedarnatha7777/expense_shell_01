@@ -12,8 +12,8 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-CHeCK_USER(){
-if [ $USER -eq 0 ]
+CHECK_USER(){
+    if [ $USER -eq 0 ]
 then    
     echo -e  "$G you are super user $N "
 else 
