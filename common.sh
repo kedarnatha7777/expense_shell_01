@@ -2,6 +2,8 @@
 
 set -e 
 
+
+
 HANDLE_ERROR(){
     echo "error occured at line no :$1 and command is :$2 "
 }
