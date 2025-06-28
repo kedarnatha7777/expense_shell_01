@@ -9,13 +9,13 @@ read db_password
 echo $db_password
 
 dnf install mysql-server -y &>>$LOG_FILE
-VALIDATION_FUNCTION $? "installing mysql-server"
+#VALIDATION_FUNCTION $? "installing mysql-server"
 
-systemctl enable mysqld &>>$LOG_FILE
-VALIDATION_FUNCTION $? "enabling mysqld"
+systemctl enable mywewesqld &>>$LOG_FILE
+#VALIDATION_FUNCTION $? "enabling mysqld"
 
 systemctl start mysqld &>>$LOG_FILE
-VALIDATION_FUNCTION $? "starting  mysqld"
+#VALIDATION_FUNCTION $? "starting  mysqld"
 
 mysql -h db.78skedar.online -uroot -p${db_password} -e 'SHOW DATABASES' &>>$LOG_FILE
 if [ $? -eq 0 ]

@@ -23,3 +23,6 @@ netstat -lntp | grep nginx
 to check the frontend  is connted sccessfull to backend
 telnet backend.78skedar.online 3306
 # make sure everything is fine in .service and config files 
+
+# diadv 
+    
